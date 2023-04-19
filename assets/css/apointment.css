@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+.container-fluid {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* apointment_section */
+.apointment_section {
+    padding: 100px 0;
+}
+
+/* garage_apointment */
+.garage_apointment {
+    padding: 30px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.garage_apointment h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.garage_apointment h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.garage_apointment h4 span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    background: #EFA326;
+    border-radius: 4px;
+}
+
+.garage_apointment h4 img {
+    width: 100px;
+}
+
+.garage_apointment h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.garage_apointment h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.garage_apointment h6 span {
+    font-weight: 700;
+    color: #FF9900;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.garage_own_contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.garage_own_contact .contact_detail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.garage_own_contact .contact_detail:first-child {
+    border: none;
+    background: #EFA326;
+    color: #FFFFFF;
+}
+
+.garage_own_contact .contact_detail img {
+    margin-right: 10px;
+}
+
+.garage_own_contact .contact_detail:last-child {
+    border: none;
+}
+
+.garage_own_contact .contact_detail:last-child img {
+    margin: 0;
+
+}
+
+.garage_apointment a.apointment_btn {
+    background: #EFA326;
+    border-radius: 4px;
+    width: 170px;
+    height: 38px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* garage_apointment */
+
+/* garage_info */
+.garage_info {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.garage_info_detail {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.garage_info_cnt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.garage_info_cnt:last-child {
+    margin: 0;
+}
+
+.garage_info_cnt h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.garage_info_cnt span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #AEAEAE;
+}
+
+.garage_info_cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.garage_info_cnt_d h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AEAEAE;
+    margin-bottom: 10px;
+}
+
+.garage_info_cnt_d h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3D3C3C;
+}
+
+.service_detail {
+    padding: 25px 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.service_detail h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #3D3C3C;
+    margin-bottom: 12px;
+}
+
+.service_detail p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.service_detail p img {
+    margin-right: 10px;
+}
+
+#secvice_modal .modal-dialog {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
+
+.services_cnt {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #EBE9E9;
+}
+
+.services_cnt h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.all_services {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 18px;
+    text-align: center;
+}
+
+.all_services_info {
+    padding: 10px;
+    width: 100%;
+    max-width: 160px;
+    background: #D9D9D9;
+}
+
+.all_services_info img {
+    margin-bottom: 25px;
+}
+
+.all_services_info h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* garage_info */
+
+/* contact_seller */
+.contact_seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.seller_detail {
+    width: 100%;
+    max-width: 630px;
+}
+
+.seller_detail h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.seller_detail h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.custom_radio {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.custom_radio input[type="radio"] {
+    display: none;
+}
+
+.custom_radio input[type="radio"]+label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1em;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 8px 8px 40px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.custom_radio input[type="radio"]+label:before,
+.custom_radio input[type="radio"]+label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-family: Times;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.custom_radio input[type="radio"]+label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em #F3F1F1, inset 0 0 0 1em #F3F1F1;
+}
+
+.custom_radio input[type="radio"]+label:hover:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #EFA326;
+}
+
+.custom_radio input[type="radio"]:checked+label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #EFA326;
+}
+
+.seller_detail h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.seller_detail .modal_fill {
+    width: 400px;
+    height: 43px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+}
+
+.seller_address {
+    width: 100%;
+    max-width: 460px;
+}
+
+.seller_address h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 18px;
+}
+
+.seller_address h2 img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.seller_address p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.105em;
+    color: #000000;
+}
+
+/* contact_seller */
+
+/* apointment_section */
+
+/* garage_imgs */
+.garage_imgs h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1B1B1B;
+    margin-bottom: 50px;
+}
+
+.garage_imgs_cnt {
+    display: flex;
+    gap: 20px;
+}
+
+.garage_imgs_cnt img {
+    width: 320px;
+}
+
+/* garage_imgs */
+
+
+@media screen and (max-width:1199px) {
+
+    /* contact_seller */
+    .contact_seller {
+        flex-direction: column;
+        gap: 45px;
+        text-align: center;
+    }
+
+    /* contact_seller */
+}
+
+@media screen and (max-width:991px) {
+
+    /* garage_info */
+    .garage_info_detail {
+        max-width: 480px;
+        padding: 15px;
+    }
+
+    .service_detail {
+        padding: 15px 10px;
+    }
+
+    .service_detail h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .service_detail p img {
+        margin-right: 6px;
+        width: 20px;
+    }
+
+    .service_detail p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* garage_info */
+}
+
+@media screen and (max-width:767px) {
+
+    /* garage_info */
+    .garage_info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .garage_info_cnt h2 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .garage_info_cnt span {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .garage_info_cnt {
+        margin-bottom: 15px;
+    }
+
+    .garage_info_cnt_d h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .garage_info_cnt_d h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .garage_info_detail {
+        max-width: 400px;
+        padding: 12px;
+    }
+
+    .garage_info_cnt:last-child {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .service_detail h2 {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .service_detail p img {
+        margin-right: 6px;
+        width: 16px;
+    }
+
+    .service_detail p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .services_cnt h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .services_cnt {
+        padding: 16px;
+    }
+
+    .all_services_info h3 {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .all_services_info img {
+        margin-bottom: 17px;
+        width: 45px;
+    }
+
+    .all_services_info {
+        max-width: 135px;
+    }
+
+    /* garage_info */
+
+    /* contact_seller */
+
+    .seller_detail h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .seller_detail h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .custom_radio {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 11px;
+    }
+
+    .seller_detail h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .seller_detail .modal_fill {
+        width: 100%;
+        height: 38px;
+        padding: 8px 25px;
+    }
+
+    .seller_address {
+        max-width: 360px;
+    }
+
+    .seller_address h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .seller_address h2 img {
+        width: 23px;
+        margin-right: 10px;
+    }
+
+    .seller_address p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* contact_seller */
+}
+
+@media screen and (max-width:500px) {
+
+    /* apointment_section */
+    .apointment_section {
+        padding: 60px 0;
+    }
+
+    /* garage_apointment */
+    .garage_apointment {
+        padding: 20px 13px;
+    }
+
+    .garage_apointment h3 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+
+    .garage_apointment h4 span {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 1px 5px;
+    }
+
+    .garage_apointment h4 img {
+        width: 70px;
+    }
+
+    .garage_apointment h5 {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 8px;
+    }
+
+    .garage_apointment h6 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .garage_own_contact .contact_detail {
+        font-size: 14px;
+        line-height: 23px;
+        padding: 4px;
+    }
+
+    .garage_own_contact .contact_detail img {
+        margin-right: 4px;
+        width: 20px;
+    }
+
+    .garage_own_contact {
+        gap: 13px;
+    }
+
+    .garage_apointment a.apointment_btn {
+        width: 100px;
+        height: 32px;
+        padding: 9px;
+        font-size: 13px;
+        line-height: 15px;
+        right: 10px;
+        top: 9%;
+        transform: translateY(0);
+    }
+
+    /* garage_apointment */
+    /* apointment_section */
+}
