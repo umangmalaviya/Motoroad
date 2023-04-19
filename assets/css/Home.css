@@ -13,7 +13,7 @@ a {
     display: block;
 }
 
-ul {
+.ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ span {
 }
 
 .navpadle {
-    padding-left: 140px !important;
+    padding-left: 40px !important;
 }
 
 .navbar {
@@ -81,11 +81,11 @@ span {
     color: #C9A76D;
 }
 
-.navbar .navbar-nav .nav-link:hover::after,
+/* .navbar .navbar-nav .nav-link:hover::after,
 .navbar .navbar-nav .nav-link:active::after,
 .navbar .navbar-nav .nav-link.active::after {
     display: block;
-}
+} */
 
 .login {
     background: #EFA326;
@@ -302,7 +302,7 @@ span {
     align-items: center;
 }
 
-ul li a:hover {
+.ul li a:hover {
     background-color: #EFA326;
 }
 
@@ -318,18 +318,45 @@ ul li a:hover {
     border-right: none;
 }
 
-ul li a {
+.navbar-brand {
+    width: 20%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    width: 80%;
+    justify-content: space-between;
+}
+
+.lassi li a {
     color: #ffffff;
 }
 
 
-ul {
+.lassi {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-li {
+.lassi li {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    float: left;
+    line-height: 56px;
+    text-align: center;
+    background: transparent;
+    color: #ffffff;
+    display: block;
+    border-radius: 4px;
+}
+
+.ul1 {
+    padding: 0px;
+}
+
+.main {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -362,6 +389,7 @@ li {
 .example {
     border: 1px solid #FFFFFF;
     border-radius: 4px;
+    display: flex;
 }
 
 .example input[type=text] {
@@ -398,7 +426,7 @@ li {
     display: table;
 }
 
-::placeholder {
+.example input::placeholder {
     color: #FFFFFF;
 }
 
@@ -412,6 +440,15 @@ li {
 
 .review_compo {
     display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 25px;
+    gap: 20px;
+}
+
+.r_body {
+    width: 100%;
+    max-width: 560px;
 }
 
 .r_img {
@@ -492,6 +529,56 @@ li {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.first_line {
+    display: flex;
+    gap: 20px;
+}
+
+.address1 {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.address img {
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+}
+
+.address1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    width: 240px;
+}
+
+.contact {
+    width: 200px;
+    height: 40px;
+    background: #EFA326;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.l_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* review section  */
@@ -550,8 +637,41 @@ li {
         content: none;
     }
 
-    /* header-section */
+    .r_header {
+        font-size: 17px;
+    }
+
+    .rating__label {
+        font-size: 1rem;
+    }
+
+    .r_img {
+        max-width: 193px;
+    }
+
+    .r_body p {
+        font-size: 12px;
+    }
+
+    .r_sub_heading {
+        margin-bottom: 8px;
+    }
+
+    .address1 {
+        font-size: 12px;
+        width: 170px;
+    }
+
+    .first_line {
+        gap: 10px;
+    }
+
+    .first_line p {
+        font-size: 12px;
+    }
 }
+
+/* header-section */
 
 @media screen and (max-width: 767px) {
 
@@ -633,4 +753,102 @@ li {
     }
 
     /* modal-part */
+
+    .main {
+        width: 150px;
+    }
+
+    .example {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .contact {
+        width: 100%;
+    }
+
+    .r_sub_heading {
+        font-size: 12px;
+    }
+
+    .r_body p {
+        font-size: 10px;
+    }
+
+    .r_header {
+        font-size: 12px;
+    }
+
+    .r_header img {
+        width: 10%;
+    }
+
+    .address1 {
+        width: 113px;
+        font-size: 11px;
+    }
+
+    .first_line {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .review_compo {
+        gap: 10px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-fluid {
+        max-width: 370px;
+    }
+
+    .header_content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .hemo_dd {
+        margin-right: 0px;
+    }
+
+    .main {
+        width: 150px;
+    }
+
+    .example {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .review_compo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .r_header {
+        font-size: 16px;
+    }
+
+    .first_line {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .l_body {
+        gap: 10px;
+    }
+
+    .address1 {
+        width: 80%;
+    }
+
+    .address img {
+        height: auto;
+    }
 }
