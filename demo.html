@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header-section -->
+    <nav class="navbar navbar-expand-lg navbar-LIGHT bg-LIGHT" aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navpadle text-center">
+                    <li class="nav-item navspace">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="about-us.html">Services</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="shop.html">Blog</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="blog.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="col-md-3 text-center login-option">
+                    <!-- <a href="#" class="fa fa-user customicon" data-bs-toggle="modal" data-bs-target="#myModal"></a> -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <p class="login">Log In</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header-section -->
+
+    <!-- login-modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content login-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h2>Log in</h2>
+                <div class="popatlal">
+                    <h4>New to headspace?</h4>
+                    <a href="javascript:;" class="register-Btn lr-cBtn">Sign up for a free trial</a>
+                </div>
+                <form id="login-form" class="login-form" action="/" name="register-form">
+                    <input type="text" name="username" id="username" placeholder="Username*" required>
+                    <input type="password" name="password" id="password" placeholder="Password*" required>
+                    <div class="check-part">
+                        <p><input type="checkbox" name="website" id="website">&nbsp;Remember Me</p>
+                        <a href="javascript:;" class="lost-pass">Lost Password?</a>
+                    </div>
+                    <div class="loginbtn-part">
+                        <button class="loginbtn lrBtn" type="submit">log In</button>
+                    </div>
+                    <div class="popatlal">
+                        <div class="inner-div1"><img src="assets/images/apple.svg" alt=" "></div>
+                        <div class="inner-div2"><img src="assets/images/facebook.svg" alt=" "></div>
+                        <div class="inner-div3"><img src="assets/images/google.jpg" alt=" "></div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-content register-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h2>Sign up</h2>
+                <p class="welcome-back">Welcome back! Please enter your details.</p>
+                <form id="login-form" class="login-form" action="/" name="register-form">
+                    <input type="text" name="username" id="username" placeholder="Username*" required>
+                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                    <input type="password" name="password" id="password" placeholder="Password*" required>
+                    <input type="password" name="Repeat Pasword" id="username" placeholder="Repeat Pasword*" required>
+                    <div class="loginbtn-part">
+                        <button class="register-Btn lrBtn" type="submit">Sign Up</button>
+                    </div>
+                </form>
+                <h4>Already have an account?</h4>
+                <a href="javascript:;" class="login-Btn lr-cBtn">Log In</a>
+            </div>
+        </div>
+    </div>
+    <!-- login-modal -->
+</body>
+
+</html>
