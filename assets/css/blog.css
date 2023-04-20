@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+.container-fluid {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* hero_sect */
+.hero_sect {
+    padding: 250px 0;
+    background: url(../images/car2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_sect h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.hero_sect h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #EFA326;
+    text-align: center;
+}
+
+.hero_sect h3 span {
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+/* hero_sect */
+
+/* review_rating */
+.review_rating {
+    padding: 100px 0;
+}
+
+.client_review {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 40px;
+}
+
+.client_review:last-child {
+    margin: 0;
+}
+
+.client_review_inn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.client_review_inn .client_review_cnt h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1B1B1B;
+    margin-bottom: 3px;
+}
+
+.client_review_inn .client_review_cnt p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #A4A4A4;
+    margin-bottom: 3px;
+}
+
+.client_review .client_review_cmnt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7D7D7D;
+    margin-bottom: 25px;
+}
+
+.client_like_msg {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+}
+
+.client_like_msg h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1B1B1B;
+}
+
+.client_like_msg h5 img {
+    margin-right: 10px;
+}
+
+.client_review_cnt h4 span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.client_review_cnt h4 img {
+    margin-right: 10px;
+}
+
+/* review_rating */
+
+
+
+@media screen and (max-width:767px) {
+
+    /* hero_sect */
+    .hero_sect {
+        padding: 150px 0;
+    }
+
+    .hero_sect h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .hero_sect h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* hero_sect */
+
+    /* review_rating */
+    .review_rating {
+        padding: 60px 0;
+    }
+
+    .client_review_inn .client_img {
+        width: 70px;
+    }
+
+    .client_review_inn .client_review_cnt h3 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0px;
+    }
+
+    .client_review_inn .client_review_cnt p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 0px;
+    }
+
+    .client_review_inn .client_review_cnt img {
+        width: 82px;
+    }
+
+    .client_review_inn {
+        margin-bottom: 15px;
+    }
+
+    .client_review .client_review_cmnt {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .client_like_msg h5 img {
+        margin-right: 7px;
+        width: 18px;
+    }
+
+    .client_like_msg h5 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .client_like_msg {
+        max-width: 250px;
+    }
+
+    .client_review_cnt h4 {
+        line-height: 16px;
+    }
+
+    .client_review_cnt h4 img {
+        width: 18px !important;
+    }
+
+    .client_review_cnt h4 span {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /* review_rating */
+}
