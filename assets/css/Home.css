@@ -435,7 +435,7 @@ span {
 
 /* review section  */
 .review_section {
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 .review_compo {
@@ -583,6 +583,93 @@ span {
 
 /* review section  */
 
+/* Car section */
+
+.car-section {
+    margin: 80px auto;
+    background: #071134;
+    opacity: 0.8;
+    height: 591px;
+}
+
+.upper-part {
+    padding: 60px 0;
+}
+
+.upper-part p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.lorem {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #EFA326;
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 260px;
+}
+
+.car-image {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.hex1::before {
+    content: "\2B22";
+    color: orange;
+    font-size: 135px;
+}
+
+.lower-section {
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    gap: 40px;
+    flex-flow: row wrap;
+}
+
+.first {
+    width: 100%;
+    max-width: 319px;
+    text-align: center;
+}
+
+.first p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin: 18px 0;
+}
+
+.first span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #ADADAD;
+}
+
+.car-image{
+    width: 100%;
+}
+
+.car-image img{
+    width: 100%;
+    max-width: 1054px;
+}
+/* Car section */
+
 @media screen and (max-width: 1400px) {
 
     /* header-section */
@@ -668,6 +755,18 @@ span {
 
     .first_line p {
         font-size: 12px;
+    }
+
+    .lorem{
+        padding: 0 50px;
+    }
+
+    .car-section{
+        height: 500px;
+    }
+
+    .first img{
+        width: 50%;
     }
 }
 
@@ -803,7 +902,7 @@ span {
 
 @media screen and (max-width: 600px) {
 
-    .container-fluid {
+    .lol {
         max-width: 370px;
     }
 
@@ -850,5 +949,9 @@ span {
 
     .address img {
         height: auto;
+    }
+
+    .lorem{
+        padding: 0 20px;
     }
 }
