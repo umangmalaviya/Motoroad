@@ -26,6 +26,89 @@
 
 <body>
 
+    <!-- header-section -->
+    <nav class="navbar navbar-expand-lg navbar-LIGHT bg-LIGHT" aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navpadle text-center lassi">
+                    <li class="nav-item navspace">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item navspace">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <div class="col-md-3 text-center login-option">
+                    <!-- <a href="#" class="fa fa-user customicon" data-bs-toggle="modal" data-bs-target="#myModal"></a> -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <p class="login">Log In</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header-section -->
+
+    <!-- login-modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content login-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h2>Log in</h2>
+                <div class="popatlal">
+                    <h4>New to headspace?</h4>
+                    <a href="javascript:;" class="register-Btn lr-cBtn">Sign up for a free trial</a>
+                </div>
+                <form id="login-form" class="login-form" action="/" name="register-form">
+                    <input type="text" name="username" id="username" placeholder="Username*" required>
+                    <input type="password" name="password" id="password" placeholder="Password*" required>
+                    <div class="check-part">
+                        <p><input type="checkbox" name="website" id="website">&nbsp;Remember Me</p>
+                        <a href="javascript:;" class="lost-pass">Lost Password?</a>
+                    </div>
+                    <div class="loginbtn-part">
+                        <button class="loginbtn lrBtn" type="submit">log In</button>
+                    </div>
+                    <div class="popatlal">
+                        <div class="inner-div1"><img src="assets/images/apple.svg" alt=" "></div>
+                        <div class="inner-div2"><img src="assets/images/facebook.svg" alt=" "></div>
+                        <div class="inner-div3"><img src="assets/images/google.jpg" alt=" "></div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-content register-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h2>Sign up</h2>
+                <p class="welcome-back">Welcome back! Please enter your details.</p>
+                <form id="login-form" class="login-form" action="/" name="register-form">
+                    <input type="text" name="username" id="username" placeholder="Username*" required>
+                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                    <input type="password" name="password" id="password" placeholder="Password*" required>
+                    <input type="password" name="Repeat Pasword" id="username" placeholder="Repeat Pasword*" required>
+                    <div class="loginbtn-part">
+                        <button class="register-Btn lrBtn" type="submit">Sign Up</button>
+                    </div>
+                </form>
+                <h4>Already have an account?</h4>
+                <a href="javascript:;" class="login-Btn lr-cBtn">Log In</a>
+            </div>
+        </div>
+    </div>
+    <!-- login-modal -->
+
     <!-- hero_sect -->
     <section class="hero_sect">
         <div class="container_fluid">
@@ -192,6 +275,70 @@
     </section>
     <!-- review_rating -->
 
+    <!-- Footer-->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="main-footer">
+                <div class="first-inner-footer">
+                    <img src="assets/images/logo.png" alt=" ">
+                    <p>As a car owner, you have to recognise
+                        that your vehicle requires a lot of care
+                        to keep running in optimum shape.</p>
+                    <div class="social-media">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="second-inner-footer">
+                    <div class="info">
+                        <div class="title">
+                            Information
+                        </div>
+                        <p>About us</p>
+                        <p>Guarantee</p>
+                        <p>privacy policy</p>
+                    </div>
+                    <div class="footer-services">
+                        <div class="info">
+                            <div class="title">
+                                Services
+                            </div>
+                            <p>Accidental Repair</p>
+                            <p>All Part Of Service</p>
+                            <p>AC Service & Repair</p>
+                            <p>Bumper Service</p>
+                            <p>Batteries</p>
+                            <p>Aliment Tyres</p>
+                        </div>
+                    </div>
+                    <div class="footer-address">
+                        <div class="info">
+                            <div class="title">
+                                Address
+                            </div>
+                            <p>Surat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-inner-footer">
+                    <img src="assets/images/footer-car.png" alt=" ">
+                    <p>24/7 emergence service</p>
+                    <div class="social-media" style="justify-content: flex-start;">
+                        <i class="fa fa-phone phone" aria-hidden="true"></i>
+                        <p>1234567890</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr" />
+            <div class="lower-footer">
+                &#9400;<p>Copyright 2022 All rights Reserved MoveMyCar.In A Product Of R-IMS.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -203,6 +350,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('#myModal .login-modal .register-Btn').click(function () {
+            $('#myModal .login-modal').hide();
+            $('#myModal .register-modal').show();
+        });
+        $('#myModal .register-modal .login-Btn').click(function () {
+            $('#myModal .login-modal').show();
+            $('#myModal .register-modal').hide();
+        });
+    </script>
 </body>
 
 </html>
