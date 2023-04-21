@@ -297,6 +297,40 @@ span {
 
 /* modal-part */
 
+/* hero_sect */
+.hero_sect {
+    padding: 250px 0;
+    background: url(../images/car2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_sect h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.hero_sect h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #EFA326;
+    text-align: center;
+}
+
+.hero_sect h3 span {
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+/* hero_sect */
+
 /* Footer */
 
 .footer {
@@ -777,6 +811,23 @@ span {
         font-size: 20px;
         line-height: 30px;
     }
+
+    /* hero_sect */
+    .hero_sect {
+        padding: 150px 0;
+    }
+
+    .hero_sect h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .hero_sect h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* hero_sect */
 }
 
 @media screen and (max-width: 627px) {
